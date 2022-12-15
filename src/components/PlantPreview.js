@@ -4,7 +4,7 @@ import 매화 from "../img/매화.png";
 
 const PlantPreview = (props) => {
 	return (
-		<div
+		<button
 			className="Plant-preview"
 			style={{
 				top: props.위치.y,
@@ -15,7 +15,7 @@ const PlantPreview = (props) => {
 			<div className="Plant-preview-image">
 				<img src={매화} alt="plant" />
 			</div>
-		</div>
+		</button>
 	);
 };
 

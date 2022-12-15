@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React from "react";
 import Header from "./Header";
 import PlantPopup from "./components/PlantPopup";
 import PlantPreview from "./components/PlantPreview";
@@ -48,11 +48,9 @@ function App() {
 					/>
 				);
 			})}
-			<PlantPopup
-				data={PlantData.체육관앞[0]}
-				IsVisible={true}
-				ClosePopup={ClosePopup}
-			/>
+			{true ? (
+				<PlantPopup data={PlantData.체육관앞[0]} ClosePopup={ClosePopup} />
+			) : null}
 		</div>
 	);
 }
