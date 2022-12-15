@@ -11,7 +11,7 @@ body > #root {
 	height: 1080px;
 	margin: 0;
 	padding: 0;
-	background: url("./school_map.png");
+	background: url("./school_map.jpg");
 	overflow: hidden;
 	pointer-events: none;
 }

@@ -7,4 +7,6 @@
 	z-index: 200;
 	cursor: pointer;
 	background-color: white;
+	font-size: 2rem;
+	line-height: 3rem;
 }
