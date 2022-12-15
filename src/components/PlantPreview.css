@@ -1,0 +1,10 @@
+.Plant-preview {
+	border-radius: 50%;
+	border-width: 0.2rem;
+	border-style: solid;
+	border-color: #00ff00;
+	width: 4rem;
+	height: 4rem;
+	overflow: hidden;
+	position: absolute;
+}

@@ -1,97 +1,58 @@
 import "./App.css";
 import React, { useState } from "react";
 import Header from "./Header";
-import PlantArea from "./components/PlantArea";
 import PlantPopup from "./components/PlantPopup";
+import PlantPreview from "./components/PlantPreview";
 import { PlantData } from "./components/PlantData";
 
 function App() {
-	const [selectedAreas, setSelectedAreas] = useState({
-		입구화단: false,
-		체육관앞: false,
-		주차장: false,
-		아파트앞: false,
-	});
+	const 위치_데이터 = [
+		{ x: 120, y: 250 },
+		{ x: 375, y: 250 },
+		{ x: 920, y: 250 },
+		{ x: 1000, y: 250 },
+		{ x: 1200, y: 250 },
+		{ x: 80, y: 780 },
+		{ x: 280, y: 850 },
+		{ x: 750, y: 900 },
+		{ x: 1000, y: 850 },
+		{ x: 1060, y: 920 },
+		{ x: 1150, y: 820 },
+		{ x: 1380, y: 910 },
+		{ x: 1470, y: 340 },
+		{ x: 1540, y: 340 },
+		{ x: 1610, y: 340 },
+		{ x: 1770, y: 340 },
+		{ x: 1810, y: 500 },
+	];
 
 	const ClosePopup = () => {
-		setSelectedAreas({
-			입구화단: false,
-			체육관앞: false,
-			주차장: false,
-			아파트앞: false,
-		});
+		console.log("close");
 	};
 
 	const clickHandler = () => {
 		console.log("123123");
 	};
 
-	console.log(selectedAreas);
-
 	return (
 		<div className="App" onClick={clickHandler}>
 			<Header />
-
-			<PlantArea
-				area="입구화단"
-				StartX={1650}
-				StartY={900}
-				EndX={1650 + 200}
-				EndY={900 + 120}
-				onSelected={() => {
-					setSelectedAreas(...selectedAreas, { 입구화단: true });
-				}}
-			/>
-			<PlantArea
-				area="체육관앞"
-				StartX={20}
-				StartY={280}
-				EndX={150}
-				EndY={600}
-				onSelected={() => {
-					setSelectedAreas(...selectedAreas, { 체육관앞: true });
-				}}
-			/>
-			<PlantArea
-				area="주차장"
-				StartX={1600}
-				StartY={400}
-				EndX={1900}
-				EndY={850}
-				onSelected={() => {
-					setSelectedAreas(...selectedAreas, { 주차장: true });
-				}}
-			/>
-			<PlantArea
-				area="아파트앞"
-				StartX={500}
-				StartY={200}
-				EndX={1600}
-				EndY={300}
-				onSelected={() => {
-					setSelectedAreas(...selectedAreas, { 아파트앞: true });
-				}}
-			/>
+			{위치_데이터.map((item) => {
+				return (
+					<PlantPreview
+						data={PlantData.체육관앞}
+						위치={item}
+						OpenPopup={() => {
+							console.log("open");
+						}}
+					/>
+				);
+			})}
 			<PlantPopup
-				data={PlantData.체육관앞}
-				IsVisible={selectedAreas.체육관앞}
-				onClosed={ClosePopup}
-			></PlantPopup>
-			<PlantPopup
-				data={PlantData.아파트앞}
-				IsVisible={selectedAreas.아파트앞}
-				onClosed={ClosePopup}
-			></PlantPopup>
-			<PlantPopup
-				data={PlantData.입구화단}
-				IsVisible={selectedAreas.입구화단}
-				onClosed={ClosePopup}
-			></PlantPopup>
-			<PlantPopup
-				data={PlantData.주차장}
-				IsVisible={selectedAreas.주차장}
-				onClosed={ClosePopup}
-			></PlantPopup>
+				data={PlantData.체육관앞[0]}
+				IsVisible={true}
+				ClosePopup={ClosePopup}
+			/>
 		</div>
 	);
 }
