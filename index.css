@@ -1,0 +1,76 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 1920px;
+	height: 1080px;
+	word-break: keep-all;
+}
+
+main {
+	position: relative;
+	width: 1920px;
+	height: 1080px;
+	text-align: center;
+}
+
+.Plant-preview-container {
+	border-radius: 50%;
+	border-width: 0.2rem;
+	border-style: solid;
+	border-color: #00ff00;
+	width: 4rem;
+	height: 4rem;
+	overflow: hidden;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	z-index: 201;
+}
+
+Plant-preview-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.Plant-preview-container:hover {
+	border-color: orange;
+}
+
+#popup {
+	display: inline-block;
+	opacity: 0;
+	background-color: bisque;
+	padding: 2rem;
+	position: fixed;
+	margin-top: 4rem;
+	z-index: 202;
+	border-radius: 5%;
+	width: 432px;
+	max-height: 70%;
+	overflow: scroll;
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.popup-description {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.popup-art {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.popup-close-button {
+	text-align: center;
+	border: none;
+	font-size: 2rem;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 10px;
+}
