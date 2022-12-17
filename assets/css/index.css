@@ -47,7 +47,7 @@ main {
 }
 
 #popup {
-	top: 200px;
+	top: 100px;
 	left: 700px;
 	display: inline-block;
 	opacity: 0;
@@ -56,8 +56,8 @@ main {
 	position: fixed;
 	margin-top: 4rem;
 	z-index: 202;
-	border-radius: 5%;
-	width: 432px;
+	border-radius: 7.5px;
+	width: 600px;
 	max-height: 1000px;
 	overflow: scroll;
 	padding-left: auto;
@@ -79,10 +79,28 @@ main {
 	border-radius: 10px;
 }
 
+.popup-container {
+	display: flex;
+	margin-top: 3px;
+}
+
+.popup-img-container {
+	width: 225px;
+	height: 300px;
+}
+
+.popup-img {
+	width: 225px;
+	object-fit: cover;
+	overflow: hidden;
+}
+
 .popup-description {
 	text-align: left;
 	margin-left: 1rem;
 	margin-right: 1rem;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .popup-art {
@@ -102,6 +120,11 @@ main {
 .popup-close-button {
 	display: block;
 	margin: 0 0 20px auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+
 	background-color: transparent;
 	font-size: 30px;
 	color: #ffffff;

@@ -46,7 +46,7 @@ const PlantData = {
 	명자: {
 		이름: "명자",
 		좌표: { x: 1060, y: 920 },
-		사진: "./images/명자.png",
+		사진: "./assets/images/명자.png",
 		조사자: "20220 정하윤",
 		과명: "장미과",
 		학명: "Chaenomeles speciosa (Sweet) Nakai",
@@ -151,7 +151,7 @@ const PlantData = {
 	산수유: {
 		이름: "산수유",
 		좌표: { x: 750, y: 900 },
-		사진: "./images/산수유.png",
+		사진: "./assets/images/산수유.png",
 		조사자: "20203 김세희",
 		과명: "층층나무과",
 		학명: "Cornus Officinalis",
@@ -231,7 +231,7 @@ const PlantData = {
 	백록담: {
 		이름: "백록담",
 		좌표: { x: 1380, y: 910 },
-		사진: "./images/백록담.png",
+		사진: "./assets/images/백록담.png",
 		조사자: "20507 유승현",
 		과명: "벽오동과",
 		학명: "firmiana simplex",
@@ -283,7 +283,7 @@ const PlantData = {
 	고로쇠나무: {
 		이름: "고로쇠나무",
 		좌표: { x: 1810, y: 500 },
-		사진: "./images/고로쇠.jpg",
+		사진: "./assets/images/고로쇠.jpg",
 		조사자: "10419 정택민",
 		과명: "무환자나무과",
 		학명: "Acer pictum subsp. mono",
@@ -317,7 +317,7 @@ const PlantData = {
 	측백나무: {
 		이름: "측백나무",
 		좌표: { x: 1000, y: 850 },
-		사진: "./images/측백나무.png",
+		사진: "./assets/images/측백나무.png",
 		조사자: "20121 전혜원",
 		과명: "측백나무과 (Cupressaceae)",
 		학명: "Platycladus orientalis",
@@ -330,7 +330,7 @@ const PlantData = {
 	대추: {
 		이름: "대추",
 		좌표: { x: 1000, y: 250 },
-		사진: "./images/대추.jpg",
+		사진: "./assets/images/대추.jpg",
 		조사자: "20113 안나경",
 		과명: "갈매나뭇과",
 		학명: "Ziziphus jujuba var. inemmis",
@@ -354,7 +354,7 @@ const PlantData = {
 	무궁화: {
 		이름: "무궁화",
 		좌표: { x: 120, y: 250 },
-		사진: "./images/무궁화.png",
+		사진: "./assets/images/무궁화.png",
 		조사자: "20709 김준형",
 		과명: "아욱과",
 		학명: "Hibiscus Syriacus L.",
@@ -393,7 +393,7 @@ const PlantData = {
 	향가이즈까: {
 		이름: "향가이즈까",
 		좌표: { x: 375, y: 250 },
-		사진: "./images/향가이즈까.png",
+		사진: "./assets/images/향가이즈까.png",
 		조사자: "10523 정유진",
 		과명: "측백나무과",
 		학명: "Juniperus chinensis",
@@ -406,7 +406,7 @@ const PlantData = {
 	은행나무: {
 		이름: "은행나무",
 		좌표: { x: 1200, y: 250 },
-		사진: "./images/은행나무.png",
+		사진: "./assets/images/은행나무.png",
 		조사자: "20712 서준호",
 		과명: "은행나무과",
 		학명: "Ginkgo biloba L.",
@@ -505,7 +505,7 @@ const PlantData = {
 	자작나무: {
 		이름: "자작나무",
 		좌표: { x: 280, y: 850 },
-		사진: "./images/자작나무.png",
+		사진: "./assets/images/자작나무.png",
 		조사자: "10807 신예원",
 		과명: "자작나무과",
 		학명: "Betula platyphylla",
@@ -529,7 +529,7 @@ const PlantData = {
 	느릅나무: {
 		이름: "느릅나무",
 		좌표: { x: 80, y: 780 },
-		사진: "./images/느릅나무.png",
+		사진: "./assets/images/느릅나무.png",
 		조사자: "10812 이세연",
 		과명: "느릅나무과",
 		학명: "Zelkova serrata MAKINO",
@@ -591,7 +591,7 @@ const PlantData = {
 	감나무: {
 		이름: "감나무",
 		좌표: { x: 1470, y: 340 },
-		사진: "./images/감나무.png",
+		사진: "./assets/images/감나무.png",
 		조사자: "10317 이준헌",
 		과명: "감나무과 ",
 		학명: "Diospyros kaki",
@@ -619,7 +619,7 @@ const PlantData = {
 	목련: {
 		이름: "목련",
 		좌표: { x: 920, y: 250 },
-		사진: "./images/목련.png",
+		사진: "./assets/images/목련.png",
 		조사자: "20614 이승준",
 		과명: "목련과 ",
 		학명: "Magnolia kobus DC.",
@@ -639,7 +639,7 @@ const PlantData = {
 	모과: {
 		이름: "모과",
 		좌표: { x: 1540, y: 340 },
-		사진: "./images/모과.png",
+		사진: "./assets/images/모과.png",
 		조사자: "20613 이민석",
 		과명: "장미과",
 		학명: "Chaenomeles sinensis",
