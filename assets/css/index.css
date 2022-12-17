@@ -13,16 +13,19 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	width: 1920px;
-	height: 1080px;
 	word-break: keep-all;
 }
 
 main {
 	position: relative;
-	width: 1920px;
-	height: 1080px;
+	width: 100%;
 	text-align: center;
+}
+
+.Main-map {
+	width: 100%;
+	position: relative;
+	object-fit: cover;
 }
 
 .Plant-preview-container {
@@ -50,18 +53,18 @@ main {
 }
 
 #popup {
-	top: 100px;
+	top: 50px;
 	left: 700px;
 	display: inline-block;
 	opacity: 0;
 	background-color: white;
 	padding: 2rem;
-	position: fixed;
+	position: absolute;
 	margin-top: 4rem;
 	z-index: 202;
 	border-radius: 7.5px;
 	width: 600px;
-	max-height: 1000px;
+	max-height: 900px;
 	overflow: scroll;
 	padding-left: auto;
 	padding-right: auto;

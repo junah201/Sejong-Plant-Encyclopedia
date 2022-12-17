@@ -65,7 +65,9 @@ function closePopup() {
 function createPlantPreview(data) {
 	containerDiv = createElement("div", {
 		class: "Plant-preview-container",
-		style: `top : ${data.좌표.y}px; left : ${data.좌표.x}px;`,
+		style: `top : ${(data.좌표.y * 100) / 1080}%; left :${
+			(data.좌표.x * 100) / 1920
+		}%;`,
 		onclick: `openPopup("${data.이름}")`,
 	});
 
@@ -79,6 +81,8 @@ function createPlantPreview(data) {
 }
 
 const main = document.getElementById("main");
+
+console.log(main);
 
 for (const Plant of Object.values(PlantData)) {
 	if (Plant.좌표 == undefined) {
