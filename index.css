@@ -81,14 +81,14 @@ main {
 
 .popup-description {
 	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .popup-art {
 	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .popup-close-button {
