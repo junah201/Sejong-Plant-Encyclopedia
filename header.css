@@ -10,3 +10,9 @@ header {
 	padding-left: 3rem;
 	padding-right: 3rem;
 }
+
+header h1 {
+	height: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}

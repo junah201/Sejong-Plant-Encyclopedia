@@ -5,7 +5,7 @@ function openPopup(PlantName) {
 	popup.style.display = "block";
 	popup.style.opacity = 1;
 	popup.style.pointerEvents = "auto";
-	popup.style.backgroundColor = "bisque";
+	popup.style.backgroundColor = "white";
 
 	PlantData[PlantName];
 
@@ -63,7 +63,10 @@ function createPlantPreview(data) {
 		onclick: `openPopup("${data.이름}")`,
 	});
 
-	PreviewImg = createElement("img", { src: data.사진 });
+	PreviewImg = createElement("img", {
+		src: data.사진,
+		class: "Plant-preview-img",
+	});
 
 	containerDiv.append(PreviewImg);
 	return containerDiv;
