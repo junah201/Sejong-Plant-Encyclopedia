@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap");
+
 *,
 *:before,
 *:after {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "Noto Sans KR", sans-serif;
 }
 
 html,
@@ -79,6 +82,10 @@ main {
 	border-radius: 10px;
 }
 
+#popup hr {
+	margin-bottom: 4px;
+}
+
 .popup-container {
 	display: flex;
 	margin-top: 3px;
@@ -110,28 +117,22 @@ main {
 }
 
 .popup-close-button {
+	display: block;
 	text-align: center;
 	border: none;
-	font-size: 2rem;
-	width: 3rem;
-	height: 3rem;
-	border-radius: 10px;
-}
-.popup-close-button {
-	display: block;
 	margin: 0 0 20px auto;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	margin-left: auto;
 	margin-right: auto;
-
+	padding: 0;
 	background-color: transparent;
-	font-size: 30px;
+	font-size: 2rem;
 	color: #ffffff;
 	background: #03549a;
 	border-radius: 100%;
-	width: 40px;
-	height: 40px;
+	width: 3rem;
+	height: 3rem;
 	border: none;
 	outline: none;
 	cursor: pointer;

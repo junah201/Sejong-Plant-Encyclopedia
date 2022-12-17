@@ -69,8 +69,6 @@ function createPlantPreview(data) {
 		onclick: `openPopup("${data.이름}")`,
 	});
 
-	console.log(data.사진);
-
 	PreviewImg = createElement("img", {
 		src: data.사진,
 		class: "Plant-preview-img",

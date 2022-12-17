@@ -270,6 +270,8 @@ const PlantData = {
 	},
 	고욤나무: {
 		이름: "고욤나무",
+		좌표: { x: 1810, y: 430 },
+		사진: "./assets/images/고욤나무.png",
 		조사자: "10808 오채은",
 		과명: "감나무과",
 		학명: "Diospyros lotus",
@@ -392,7 +394,7 @@ const PlantData = {
 	},
 	향가이즈까: {
 		이름: "향가이즈까",
-		좌표: { x: 375, y: 250 },
+		좌표: { x: 200, y: 250 },
 		사진: "./assets/images/향가이즈까.png",
 		조사자: "10523 정유진",
 		과명: "측백나무과",
@@ -663,6 +665,8 @@ const PlantData = {
 	},
 	배롱나무: {
 		이름: "배롱나무",
+		좌표: { x: 1610, y: 340 },
+		사진: "./assets/images/배롱나무.png",
 		조사자: "20613 이민석",
 		과명: "부처꽃과",
 		학명: "Lagerstroemia indica",
@@ -678,6 +682,8 @@ const PlantData = {
 	},
 	향나무: {
 		이름: "향나무",
+		좌표: { x: 375, y: 250 },
+		사진: "./assets/images/향나무.png",
 		조사자: "20104 김성현",
 		과명: "측백나무과(Cupressaceae)",
 		학명: "Juniperus chinensis",
