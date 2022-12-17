@@ -2,6 +2,8 @@ const PlantData = {
 	단풍: {
 		이름: "단풍",
 		조사자: "20105 김지안",
+		좌표: { x: 260, y: 450 },
+		사진: "./assets/images/단풍.png",
 		과명: "무환자나무과",
 		학명: "Acer palmatum",
 		속명: "Acer (아케르)",
@@ -19,6 +21,8 @@ const PlantData = {
 	},
 	매화: {
 		이름: "매화",
+		좌표: { x: 900, y: 850 },
+		사진: "./assets/images/매화.png",
 		조사자: "20201 권형란",
 		과명: "장미과",
 		학명: "Prunus mume",
@@ -60,6 +64,8 @@ const PlantData = {
 	},
 	야광: {
 		이름: "야광",
+		좌표: { x: 370, y: 850 },
+		사진: "./assets/images/야광.png",
 		조사자: "10702 김선재",
 		과명: "장미과",
 		학명: "Malus baccata",
@@ -93,6 +99,8 @@ const PlantData = {
 	},
 	소나무: {
 		이름: "소나무",
+		좌표: { x: 1260, y: 900 },
+		사진: "./assets/images/소나무.png",
 		조사자: "10805 박현명",
 		과명: "소나무과(Pinaceae)",
 		학명: "Cedrus deodara (Roxb.) Loudon",
@@ -131,6 +139,8 @@ const PlantData = {
 	},
 	앵두: {
 		이름: "앵두",
+		좌표: { x: 625, y: 850 },
+		사진: "./assets/images/앵두.png",
 		조사자: "20112 성윤영",
 		과명: "장미과",
 		학명: "Prunus tomentosa",
@@ -563,6 +573,8 @@ const PlantData = {
 	},
 	서어나무: {
 		이름: "서어나무",
+		좌표: { x: 1300, y: 250 },
+		사진: "./assets/images/서어나무.png",
 		조사자: "10214 유현규",
 		과명: "자작나무과",
 		학명: "Carpinus laxiflora Bl",

@@ -1,6 +1,5 @@
 function openPopup(PlantName) {
 	closePopup();
-	console.log(PlantName);
 	const popup = document.getElementById("popup");
 	popup.style.display = "block";
 	popup.style.opacity = 1;
@@ -82,10 +81,9 @@ function createPlantPreview(data) {
 
 const main = document.getElementById("main");
 
-console.log(main);
-
 for (const Plant of Object.values(PlantData)) {
 	if (Plant.좌표 == undefined) {
+		console.log(Plant.이름);
 		continue;
 	}
 	main.prepend(createPlantPreview(Plant));

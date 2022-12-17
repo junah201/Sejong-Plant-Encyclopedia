@@ -30,11 +30,11 @@ main {
 
 .Plant-preview-container {
 	border-radius: 50%;
-	border-width: 0.2rem;
+	border-width: 0.25vw;
 	border-style: solid;
 	border-color: #00ff00;
-	width: 4rem;
-	height: 4rem;
+	width: 3.5vw;
+	height: 3.5vw;
 	overflow: hidden;
 	position: absolute;
 	padding: 0;
@@ -53,8 +53,8 @@ main {
 }
 
 #popup {
-	top: 50px;
-	left: 700px;
+	top: 5vh;
+	left: 30vw;
 	display: inline-block;
 	opacity: 0;
 	background-color: white;
@@ -63,8 +63,8 @@ main {
 	margin-top: 4rem;
 	z-index: 202;
 	border-radius: 7.5px;
-	width: 600px;
-	max-height: 900px;
+	max-width: 35vw;
+	max-height: 60vh;
 	overflow: scroll;
 	padding-left: auto;
 	padding-right: auto;
