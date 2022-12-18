@@ -6,22 +6,28 @@ function openPopup(PlantName) {
 	popup.style.pointerEvents = "auto";
 	popup.style.backgroundColor = "white";
 
-	popupTitle = createElement("h1", { class: "popup-title" });
+	const popupTitle = createElement("h1", { class: "popup-title" });
 	popupTitle.innerText = PlantName;
 
-	popupContainerDiv = createElement("div", {
+	const popupContainerDiv = createElement("div", {
 		class: "popup-container",
 	});
 
-	popupPlantImg = createElement("img", {
+	const popupImgContainer = createElement("div", {
+		class: "popup-img-container",
+	});
+
+	const popupImg = createElement("img", {
 		class: "popup-img",
 		src: PlantData[PlantName].사진,
 	});
 
-	popupDivision = createElement("hr");
-	popupBlank = createElement("br");
+	popupImgContainer.append(popupImg);
 
-	popupDescription = createElement("p", { class: "popup-description" });
+	const popupDivision = createElement("hr");
+	const popupBlank = createElement("br");
+
+	const popupDescription = createElement("p", { class: "popup-description" });
 	popupDescription.innerText = `조사자 : ${PlantData[PlantName].조사자}
 	과명 : ${PlantData[PlantName].과명}
 	학명 : ${PlantData[PlantName].학명}
@@ -31,23 +37,29 @@ function openPopup(PlantName) {
 	위치 : ${PlantData[PlantName].위치}
 	`;
 
-	popupArt = createElement("p", { class: "popup-art" });
+	const popupArtContainer = createElement("div", {
+		class: "popup-art-container",
+	});
+
+	const popupArt = createElement("p", { class: "popup-art" });
 	popupArt.innerText = PlantData[PlantName].작품;
 
-	popupCloseButton = createElement("button", {
+	popupArtContainer.append(popupArt);
+
+	const popupCloseButton = createElement("button", {
 		class: "popup-close-button",
 		onclick: "closePopup()",
 	});
 	popupCloseButton.innerText = "X";
 
-	popupContainerDiv.append(popupPlantImg, popupDescription);
+	popupContainerDiv.append(popupImgContainer, popupDescription);
 
 	popup.append(
 		popupTitle,
 		popupDivision,
 		popupContainerDiv,
 		popupBlank,
-		popupArt,
+		popupArtContainer,
 		popupCloseButton
 	);
 }

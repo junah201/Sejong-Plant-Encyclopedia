@@ -36,6 +36,8 @@ const PlantData = {
 	},
 	메타세쿼이아: {
 		이름: "메타세쿼이아",
+		좌표: { x: 1480, y: 910 },
+		사진: "./assets/images/메타세쿼이아.png",
 		조사자: "20209 신유진",
 		과명: "메타세쿼이아속",
 		학명: "Metasequoia glyptostroboides",
